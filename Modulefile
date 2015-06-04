@@ -1,4 +1,4 @@
-name    'puppet-riemann'
+name    'ajsmith-riemann'
 version '0.2.0'
 source 'UNKNOWN'
 author 'Alex Smith <alex.smith@redhat.com>'
