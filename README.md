@@ -27,7 +27,9 @@ The Riemann RPM can be downloaded here: http://riemann.io
 
 Here's a basic configuration:
 
-    class {'::riemann':}
+```puppet
+class {'::riemann':}
+```
 
 ## Compatibility
 
