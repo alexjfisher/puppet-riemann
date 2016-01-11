@@ -1,3 +1,7 @@
+# == Class: riemann::docker::container
+#
+# Configure a systemd service to run a Riemann container.
+
 define riemann::docker::container (
   $image            = 'riemann',
   $depends          = undef,
@@ -6,7 +10,7 @@ define riemann::docker::container (
   $volumes_from     = undef,
 ) {
 
-  docker_systemd::container { "$title":
+  docker_systemd::container { $title:
     image        => $image,
     depends      => $depends,
     link         => $link,
