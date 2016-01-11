@@ -38,4 +38,6 @@ RHEL), at least for now.
 
 ## Release Notes
 
-2015/05/18 - v0.2.0 release.
+### v0.3.2
+
+Initial release.
