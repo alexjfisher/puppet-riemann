@@ -8,7 +8,7 @@ class riemann::docker::image {
     ensure   => latest,
     provider => git,
     source   => 'https://github.com/ajsmith/docker-riemann.git',
-    revision => 'master',
+    revision => '1.0',
   }
 
   ~>
