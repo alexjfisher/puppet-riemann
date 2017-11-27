@@ -13,8 +13,9 @@
 #   Port to accept websocket connections on.
 #
 class riemann (
-  $server_port    = 5555,
-  $websocket_port = 5556,
+  $server_port     = 5555,
+  $websocket_port  = 5556,
+  $extra_java_opts = [],
   ) {
 
   package {'riemann':
@@ -35,6 +36,7 @@ class riemann (
     ensure  => present,
     content => template('riemann/etc/sysconfig/riemann.erb'),
     require => Package['riemann'],
+    notify  => Service['riemann'],
   }
 
   service {'riemann':

@@ -3,6 +3,9 @@
 
 # Optional JAVA_OPTS
 # EXTRA_JAVA_OPTS=
+<%- unless @extra_java_opts.empty? -%>
+EXTRA_JAVA_OPTS=<%= @extra_java_opts.join(' ') -%>
+<%- end -%>
 
 # Alternative path to config directory
 # RIEMANN_PATH_CONF=
